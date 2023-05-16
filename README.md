@@ -6,6 +6,8 @@ NLW Spacetime é uma aplicação de recordação de memórias, onde o nosso usu�
 
 ## ✅ Demostração
 
+Embreve
+
 ## 🎉 Sobre o projeto
 Este projeto foi desenvolvido durante a semana da NLW, evento feito pela Rocketseat, que ocorreu em maio de 2023.
 
@@ -14,9 +16,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 * [TypeScript](https://typescriptlang.org) - TypeScript extends JavaScript by adding types to the language.
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-* [Vite](https://vite.dev/) - Vite Next Generation Frontend Tooling
 * [tailwindcss](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
-* [Radix UI](https://www.radix-ui.com/) - Why waste time reinventing UI components?
 * [Expo](https://expo.dev/) - Build one project that runs natively on all your users' devices
 * [Node.js](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Vitest](https://vitest.dev/) - A Vite-native unit test framework. It's fast!
@@ -27,7 +27,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 <p>
 <img src="https://cdn.svgporn.com/logos/typescript-icon.svg" alt="typescript" width="45" height="45" style="margin-left: 5px;"/>
 <img src="https://cdn.svgporn.com/logos/react.svg" alt="reactjs" width="45" height="45" style="margin-left: 5px;"/>
-<img src="https://cdn.svgporn.com/logos/vitejs.svg" alt="vite" width="45" height="45" style="margin-left: 5px;"/>
+<img src="https://cdn.svgporn.com/logos/nextjs.svg" alt="vite" width="45" height="45" style="margin-left: 5px;"/>
 <img src="https://cdn.svgporn.com/logos/tailwindcss-icon.svg" alt="vite" width="45" height="45" style="margin-left: 5px;"/>
 <img src="https://avatars.githubusercontent.com/u/75042455?s=280&v=4" alt="radixui" width="45" height="45" style="margin-left: 5px;"/>
 <img src="https://cdn.svgporn.com/logos/vitest.svg" alt="vitest" width="45" height="45" style="margin-left: 5px;"/>
@@ -113,14 +113,8 @@ cd server && yarn test
 
 ## 🪄 Melhorias em desenvolvimento
 
-- **API**
-  - [x] Arquitetura Limpa/Domain Driven Design/Código Limpo
-  - [x] Testes
-  - [x] Adicionar validação
-  - [x] Adicionar autenticação
-    - [x] Adicionar autenticação mágica com e-mail
-    - [x] Autenticar com provedor do Discord
-    - [x] Autenticar com provedor da TwitchTV
+Embreve
+
 ---
 <h3 align="center">
 
