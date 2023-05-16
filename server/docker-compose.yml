@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  spacetime-pgsql:
+    container_name: spacetime-pgsql
+    image: bitnami/postgresql:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=spacetimedb
+    networks:
+      - application-network
+
+  spacetime-app:
+    build: .
+    container_name: spacetime-app
+    ports:
+      - '3333:3333'
+    depends_on:
+      - spacetime-pgsql
+    links:
+      - spacetime-pgsql
+    volumes:
+      - .:/usr/backend
+    environment:
+      - DATABASE_URL=postgresql://docker:docker@spacetime-pgsql:5432/spacetimedb?schema=public
+    networks:
+      - application-network
+
+networks:
+  application-network:
+    driver: bridge
