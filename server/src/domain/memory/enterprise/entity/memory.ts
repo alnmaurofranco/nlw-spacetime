@@ -19,6 +19,10 @@ export class Memory extends Entity<MemoryProps> {
     return this.props.coverUrl
   }
 
+  private set coverUrl(value: MemoryProps['coverUrl']) {
+    this.coverUrl = value
+  }
+
   public get content(): MemoryProps['content'] {
     return this.props.content
   }
@@ -55,6 +59,14 @@ export class Memory extends Entity<MemoryProps> {
       },
       id,
     )
+  }
+
+  public update(
+    props: Pick<MemoryProps, 'content' | 'isPublic' | 'coverUrl'>,
+  ): void {
+    this.content = props.content
+    this.isPublic = props.isPublic
+    this.coverUrl = props.coverUrl
   }
 
   public static create(
