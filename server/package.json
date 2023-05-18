@@ -48,6 +48,7 @@
   "dependencies": {
     "@fastify/cors": "^8.2.1",
     "@prisma/client": "^4.14.0",
+    "axios": "^1.4.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.17.0",
     "supertest": "^6.3.3",
