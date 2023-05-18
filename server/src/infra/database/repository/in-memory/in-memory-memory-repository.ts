@@ -36,4 +36,14 @@ export class InMemoryMemoryRepository implements MemoryRepository {
     }
     this.items.splice(memoryIndex, 1)
   }
+
+  async save(memory: Memory): Promise<void> {
+    const memoryIndex = this.items.findIndex(
+      (memoryFind) => memoryFind.id.value === memory.id.value,
+    )
+    if (memoryIndex < -1) {
+      return
+    }
+    this.items[memoryIndex] = memory
+  }
 }
