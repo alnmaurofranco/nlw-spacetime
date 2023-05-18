@@ -5,4 +5,5 @@ export interface MemoryRepository {
   findById(id: string): Promise<Memory | null>
   create(memory: Memory): Promise<void>
   delete(memory: Memory): Promise<void>
+  save(memory: Memory): Promise<void>
 }
