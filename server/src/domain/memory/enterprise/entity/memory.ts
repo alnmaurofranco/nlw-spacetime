@@ -20,7 +20,7 @@ export class Memory extends Entity<MemoryProps> {
   }
 
   private set coverUrl(value: MemoryProps['coverUrl']) {
-    this.coverUrl = value
+    this.props.coverUrl = value
   }
 
   public get content(): MemoryProps['content'] {
