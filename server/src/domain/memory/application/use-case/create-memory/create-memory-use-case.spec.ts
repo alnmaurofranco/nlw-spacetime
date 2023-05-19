@@ -1,4 +1,4 @@
-import { InMemoryMemoryRepository } from '@infra/database/repository/in-memory/in-memory-memory-repository'
+import { InMemoryMemoryRepository } from '@test/repository/database/in-memory/in-memory-memory-repository'
 import { CreateMemoryUseCase } from './create-memory-use-case'
 
 let inMemoryMemoryRepository: InMemoryMemoryRepository
