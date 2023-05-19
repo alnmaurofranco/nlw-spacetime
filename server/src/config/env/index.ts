@@ -8,6 +8,7 @@ const environmentFromSchema = z.object({
   PORT: z.coerce.number().default(3333),
   GITHUB_CLIENT_ID: z.string(),
   GITHUB_CLIENT_SECRET: z.string(),
+  JWT_KEY_SECRET: z.string(),
 })
 
 const _environment = environmentFromSchema.safeParse(process.env)
