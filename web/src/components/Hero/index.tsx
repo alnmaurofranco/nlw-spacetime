@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import logoSpacetime from '../../assets/logo-spacetime.svg'
 
 import Image from 'next/image'
@@ -17,12 +18,12 @@ export function Hero() {
         </p>
       </div>
 
-      <a
-        href=""
+      <Link
+        href="/memories/new"
         className="font-alt inline-block rounded-full bg-green-500 px-5 py-3 uppercase leading-none text-black hover:bg-green-600"
       >
         Cadastrar Lembraça
-      </a>
+      </Link>
     </div>
   )
 }
