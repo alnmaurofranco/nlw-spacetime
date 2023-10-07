@@ -12,10 +12,13 @@ export class UpdateMemoryUseCase
   }
 
   async execute(input: UpdateMemoryInput): Promise<UpdateMemoryOutput> {
-    const { memoryId, content, coverUrl, isPublic } = input
+    const { userId, memoryId, content, coverUrl, isPublic } = input
     const memory = await this.#memoryRepository.findById(memoryId)
     if (!memory) {
       throw new Error('Memory not found')
+    }
+    if (memory.userId !== userId) {
+      throw new Error('Forbbiden')
     }
     memory.update({
       content,

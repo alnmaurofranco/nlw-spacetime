@@ -4,6 +4,11 @@
 NLW Spacetime é uma aplicação de recordação de memórias, onde o nosso usuário poderá adicionar à uma timeline textos, fotos e vídeos de acontecimentos marcantes da sua vida, organizados por mês e ano.
 </p>
 
+- TODO
+
+- [] Adicionar na Fetch Recent Memories DTO -> userId e também no Memory Repository
+- [] Adicionar na Create Memory DTO -> userId 
+- [] Listar uma memoria especifica, só pode mostrar a memoria do usuário e não de outro usuário. Mas se a memoria estiver "publica" pode ser acessada por outro usuário
 ## ✅ Demostração
 
 Embreve

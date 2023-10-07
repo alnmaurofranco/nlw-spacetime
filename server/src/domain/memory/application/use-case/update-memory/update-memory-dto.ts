@@ -1,4 +1,5 @@
 type UpdateMemoryInput = {
+  userId: string
   memoryId: string
   content: string
   isPublic: boolean
